@@ -9,6 +9,7 @@ import SingleCampuses from "./components/SingleCampuses";
 import AllStudent from "./components/AllStudents";
 import AddStudents from "./components/AddStudents";
 import AddCampus from "./components/AddCampus";
+import SingleStudent from "./components/SingleStudent";
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/add-campus" element={<AddCampus />} />
         <Route path="/campuses/:id" element={<SingleCampuses />} />
         <Route path="/add-student" element={<AddStudents />} />
+        <Route path="/student/:id" element={<SingleStudent />} />
         {/* Add more routes as needed */}
       </Routes>
     </div>
