@@ -26,7 +26,7 @@ const SingleStudent = () => {
                 {student.imageUrl && <img src={student.imageUrl} alt={`${student.firstName} ${student.lastName}`}/>}
                 <p><strong>GPA:</strong> {student.gpa}</p>
                 <p><strong>Email:</strong> {student.email}</p>
-                <h3>Campus Registered:</h3>
+                <h3>Campus Registered:</h3> {student.campusid}
                 <p>This student may have registered to a campus, but they are not shown here.</p> {/* ✅ Static message */}
             </div>
         </div>
